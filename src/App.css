@@ -1,5 +1,8 @@
 .main-page {
-  height: 200vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   background-image: radial-gradient(
       at 49% 13%,
       hsla(107, 92%, 73%, 1) 0px,
@@ -13,8 +16,4 @@
     radial-gradient(at 79% 19%, hsla(135, 82%, 70%, 1) 0px, transparent 50%);
 }
 
-.main-navbar{
-  position: sticky;
-  top: 0;
-  
-}
+
