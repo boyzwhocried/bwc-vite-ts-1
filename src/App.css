@@ -1,20 +1,12 @@
-.main-page {
-  position: relative;
-  display: flex;
-  flex-direction: column;
+.noise-overlay::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   height: 100vh;
-  background-image: radial-gradient(
-      at 49% 13%,
-      hsla(107, 92%, 73%, 1) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 24% 61%, hsla(280, 69%, 66%, 1) 0px, transparent 50%),
-    radial-gradient(at 37% 29%, hsla(261, 86%, 72%, 1) 0px, transparent 50%),
-    radial-gradient(at 45% 61%, hsla(273, 76%, 73%, 1) 0px, transparent 50%),
-    radial-gradient(at 64% 70%, hsla(224, 78%, 73%, 1) 0px, transparent 50%),
-    radial-gradient(at 36% 28%, hsla(113, 78%, 76%, 1) 0px, transparent 50%),
-    radial-gradient(at 79% 19%, hsla(135, 82%, 70%, 1) 0px, transparent 50%);
-    
+  content: "";
+  opacity: 0.03;
+  z-index: 1000;
+  pointer-events: none;
+  background: url("./assets/noise.gif");
 }
-
-

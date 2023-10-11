@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { ToggleButton } from "react-bootstrap";
-import { MdLightMode } from "react-icons/md";
-import { MdDarkMode } from "react-icons/md";
+import { MdLightMode, MdDarkMode } from "react-icons/md";
 
-function ThemeMode() {
+function ThemeModeButton() {
   const [checked, setChecked] = useState(false);
 
   function setDarkMode() {
@@ -34,15 +33,13 @@ function ThemeMode() {
           style={{
             color: "var(--light-gray)",
             fontSize: "24px",
-            
           }}
         >
           {checked ? <MdDarkMode /> : <MdLightMode />}
         </div>
       </ToggleButton>
-      
     </div>
   );
 }
 
-export default ThemeMode;
+export default ThemeModeButton;

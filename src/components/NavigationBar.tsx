@@ -25,7 +25,7 @@ function NavigationBar() {
   const styles = {
     navbar: {
       display: "flex",
-      backgroundColor: isExpanded ? "var(--primary-color-75-opacity)" : "",
+      backgroundColor: isExpanded ? "var(--light-gray-75-opacity)" : "",
       backdropFilter: "blur(10px)",
     },
     toggler: {

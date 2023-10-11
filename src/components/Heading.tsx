@@ -1,5 +1,4 @@
 import { Row, Col, Image, Container } from "react-bootstrap";
-// import "./Heading.css";
 import image1 from "../assets/images/000015950035.jpg";
 
 const Heading = () => {

@@ -1,0 +1,161 @@
+* {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  transition: all 0.25s ease;
+}
+
+:root {
+  /* Light Mode Colors */
+  /* Primary Color: Pastel Sage Green */
+  --primary-color: #b3c897;
+  --primary-color-25-opacity: rgba(179, 200, 151, 0.25);
+  --primary-color-50-opacity: rgba(179, 200, 151, 0.5);
+  --primary-color-75-opacity: rgba(179, 200, 151, 0.75);
+
+  /* Shades of Pastel Sage Green */
+  --lightest-pastel-sage-green: #dbebd0;
+  --lightest-pastel-sage-green-25-opacity: rgba(219, 235, 208, 0.25);
+  --lightest-pastel-sage-green-50-opacity: rgba(219, 235, 208, 0.5);
+  --lightest-pastel-sage-green-75-opacity: rgba(219, 235, 208, 0.75);
+
+  --light-pastel-sage-green: #c4d9a7;
+  --light-pastel-sage-green-25-opacity: rgba(196, 217, 167, 0.25);
+  --light-pastel-sage-green-50-opacity: rgba(196, 217, 167, 0.5);
+  --light-pastel-sage-green-75-opacity: rgba(196, 217, 167, 0.75);
+
+  --medium-pastel-sage-green: #a8c47e;
+  --medium-pastel-sage-green-25-opacity: rgba(168, 196, 126, 0.25);
+  --medium-pastel-sage-green-50-opacity: rgba(168, 196, 126, 0.5);
+  --medium-pastel-sage-green-75-opacity: rgba(168, 196, 126, 0.75);
+
+  --dark-pastel-sage-green: #8fb960;
+  --dark-pastel-sage-green-25-opacity: rgba(143, 185, 96, 0.25);
+  --dark-pastel-sage-green-50-opacity: rgba(143, 185, 96, 0.5);
+  --dark-pastel-sage-green-75-opacity: rgba(143, 185, 96, 0.75);
+
+  --darkest-pastel-sage-green: #7ea94d;
+  --darkest-pastel-sage-green-25-opacity: rgba(126, 169, 77, 0.25);
+  --darkest-pastel-sage-green-50-opacity: rgba(126, 169, 77, 0.5);
+  --darkest-pastel-sage-green-75-opacity: rgba(126, 169, 77, 0.75);
+
+  /* Text Colors for Light Mode */
+  --text-light: #ffffff;
+  --text-light-25-opacity: rgba(255, 255, 255, 0.25);
+  --text-light-50-opacity: rgba(255, 255, 255, 0.5);
+  --text-light-75-opacity: rgba(255, 255, 255, 0.75);
+  --text-dark: #333333;
+  --text-dark-25-opacity: rgba(51, 51, 51, 0.25);
+  --text-dark-50-opacity: rgba(51, 51, 51, 0.5);
+  --text-dark-75-opacity: rgba(51, 51, 51, 0.75);
+
+  /* Accent Colors for Light Mode */
+  --pastel-lavender: #d8cadd;
+  --pastel-lavender-25-opacity: rgba(216, 202, 221, 0.25);
+  --pastel-lavender-50-opacity: rgba(216, 202, 221, 0.5);
+  --pastel-lavender-75-opacity: rgba(216, 202, 221, 0.75);
+  --pastel-peach: #ffc6a0;
+  --pastel-peach-25-opacity: rgba(255, 198, 160, 0.25);
+  --pastel-peach-50-opacity: rgba(255, 198, 160, 0.5);
+  --pastel-peach-75-opacity: rgba(255, 198, 160, 0.75);
+  --pastel-blue: #a9cfe7;
+  --pastel-blue-25-opacity: rgba(169, 207, 231, 0.25);
+  --pastel-blue-50-opacity: rgba(169, 207, 231, 0.5);
+  --pastel-blue-75-opacity: rgba(169, 207, 231, 0.75);
+  --pastel-pink: #f7c5d1;
+  --pastel-pink-25-opacity: rgba(247, 197, 209, 0.25);
+  --pastel-pink-50-opacity: rgba(247, 197, 209, 0.5);
+  --pastel-pink-75-opacity: rgba(247, 197, 209, 0.75);
+  --pastel-yellow: #f7e29c;
+  --pastel-yellow-25-opacity: rgba(247, 226, 156, 0.25);
+  --pastel-yellow-50-opacity: rgba(247, 226, 156, 0.5);
+  --pastel-yellow-75-opacity: rgba(247, 226, 156, 0.75);
+
+  /* Neutrals for Light Mode */
+  --light-gray: #f5f5f5;
+  --light-gray-25-opacity: rgba(245, 245, 245, 0.25);
+  --light-gray-50-opacity: rgba(245, 245, 245, 0.5);
+  --light-gray-75-opacity: rgba(245, 245, 245, 0.75);
+  --medium-gray: #d0d0d0;
+  --medium-gray-25-opacity: rgba(208, 208, 208, 0.25);
+  --medium-gray-50-opacity: rgba(208, 208, 208, 0.5);
+  --medium-gray-75-opacity: rgba(208, 208, 208, 0.75);
+}
+
+[data-theme="dark"] {
+  /* Dark Mode Colors */
+  /* Primary Color: Pastel Sage Green (Dark Mode) */
+  --primary-color: #668a60;
+  --primary-color-25-opacity: rgba(102, 138, 96, 0.25);
+  --primary-color-50-opacity: rgba(102, 138, 96, 0.5);
+  --primary-color-75-opacity: rgba(102, 138, 96, 0.75);
+
+  /* Shades of Pastel Sage Green (Dark Mode) */
+  --lightest-pastel-sage-green: #537348;
+  --lightest-pastel-sage-green-25-opacity: rgba(83, 115, 72, 0.25);
+  --lightest-pastel-sage-green-50-opacity: rgba(83, 115, 72, 0.5);
+  --lightest-pastel-sage-green-75-opacity: rgba(83, 115, 72, 0.75);
+
+  --light-pastel-sage-green: #465d30;
+  --light-pastel-sage-green-25-opacity: rgba(70, 93, 48, 0.25);
+  --light-pastel-sage-green-50-opacity: rgba(70, 93, 48, 0.5);
+  --light-pastel-sage-green-75-opacity: rgba(70, 93, 48, 0.75);
+
+  --medium-pastel-sage-green: #3b4f28;
+  --medium-pastel-sage-green-25-opacity: rgba(59, 79, 40, 0.25);
+  --medium-pastel-sage-green-50-opacity: rgba(59, 79, 40, 0.5);
+  --medium-pastel-sage-green-75-opacity: rgba(59, 79, 40, 0.75);
+
+  --dark-pastel-sage-green: #2f4220;
+  --dark-pastel-sage-green-25-opacity: rgba(47, 66, 32, 0.25);
+  --dark-pastel-sage-green-50-opacity: rgba(47, 66, 32, 0.5);
+  --dark-pastel-sage-green-75-opacity: rgba(47, 66, 32, 0.75);
+
+  --darkest-pastel-sage-green: #293b1c;
+  --darkest-pastel-sage-green-25-opacity: rgba(41, 59, 28, 0.25);
+  --darkest-pastel-sage-green-50-opacity: rgba(41, 59, 28, 0.5);
+  --darkest-pastel-sage-green-75-opacity: rgba(41, 59, 28, 0.75);
+
+  /* Text Colors for Dark Mode */
+  --text-light: #ffffff;
+  --text-light-25-opacity: rgba(255, 255, 255, 0.25);
+  --text-light-50-opacity: rgba(255, 255, 255, 0.5);
+  --text-light-75-opacity: rgba(255, 255, 255, 0.75);
+  --text-dark: #e2e2e2;
+  --text-dark-25-opacity: rgba(226, 226, 226, 0.25);
+  --text-dark-50-opacity: rgba(226, 226, 226, 0.5);
+  --text-dark-75-opacity: rgba(226, 226, 226, 0.75);
+
+  /* Accent Colors for Dark Mode */
+  --pastel-lavender: #ab95b0;
+  --pastel-lavender-25-opacity: rgba(171, 149, 176, 0.25);
+  --pastel-lavender-50-opacity: rgba(171, 149, 176, 0.5);
+  --pastel-lavender-75-opacity: rgba(171, 149, 176, 0.75);
+  --pastel-peach: #ff8a6a;
+  --pastel-peach-25-opacity: rgba(255, 138, 106, 0.25);
+  --pastel-peach-50-opacity: rgba(255, 138, 106, 0.5);
+  --pastel-peach-75-opacity: rgba(255, 138, 106, 0.75);
+  --pastel-blue: #7ea4c4;
+  --pastel-blue-25-opacity: rgba(126, 164, 196, 0.25);
+  --pastel-blue-50-opacity: rgba(126, 164, 196, 0.5);
+  --pastel-blue-75-opacity: rgba(126, 164, 196, 0.75);
+  --pastel-pink: #eaa5b4;
+  --pastel-pink-25-opacity: rgba(234, 165, 180, 0.25);
+  --pastel-pink-50-opacity: rgba(234, 165, 180, 0.5);
+  --pastel-pink-75-opacity: rgba(234, 165, 180, 0.75);
+  --pastel-yellow: #e7d47a;
+  --pastel-yellow-25-opacity: rgba(231, 212, 122, 0.25);
+  --pastel-yellow-50-opacity: rgba(231, 212, 122, 0.5);
+  --pastel-yellow-75-opacity: rgba(231, 212, 122, 0.75);
+
+  /* Neutrals for Dark Mode */
+  --light-gray: #2e2e2e;
+  --light-gray-25-opacity: rgba(46, 46, 46, 0.25);
+  --light-gray-50-opacity: rgba(46, 46, 46, 0.5);
+  --light-gray-75-opacity: rgba(46, 46, 46, 0.75);
+  --medium-gray: #1f1f1f;
+  --medium-gray-25-opacity: rgba(31, 31, 31, 0.25);
+  --medium-gray-50-opacity: rgba(31, 31, 31, 0.5);
+  --medium-gray-75-opacity: rgba(31, 31, 31, 0.75);
+}

@@ -1,15 +1,18 @@
 import { motion } from "framer-motion";
-import "./App.css";
+
+import useComponentHeight from "./tools/UseComponentHeight";
+
 import Heading from "./components/Heading";
 import NavigationBar from "./components/NavigationBar";
-import ThemeMode from "./ThemeMode";
-import useComponentHeight from "./tools/UseComponentHeight";
+import ThemeModeButton from "./components/ThemeModeButton";
+import "./App.css";
 
 function App() {
   const { ref, height } = useComponentHeight();
 
   return (
     <>
+      <div className="noise-overlay" />
       <div
         className="main-wrapper"
         style={{
@@ -19,7 +22,7 @@ function App() {
           backgroundColor: "var(--light-gray)",
         }}
       >
-        <div className="navbar-height" style={{ height: height }}></div>
+        <div className="navbar-height" style={{ height: height }} />
         <div
           ref={ref}
           className="navbar-wrapper"
@@ -39,7 +42,6 @@ function App() {
         </div>
         <div className="content-wrapper">
           <div>
-            {/* The height of navbar component is: {componentHeight}px */}
             <Heading />
           </div>
           <Heading />
@@ -54,7 +56,7 @@ function App() {
             padding: "0.5rem",
           }}
         >
-          <ThemeMode />
+          <ThemeModeButton />
         </div>
       </div>
     </>
