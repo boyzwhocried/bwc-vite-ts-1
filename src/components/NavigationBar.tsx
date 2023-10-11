@@ -26,7 +26,7 @@ function NavigationBar() {
     navbar: {
       display: "flex",
       transition: "0.2s ease",
-      backgroundColor: isExpanded ? "var(--medium-gray)" : "",
+      backgroundColor: isExpanded ? "var(--primary-color)" : "",
       backdropFilter: "blur(10px)",
     },
     toggler: {

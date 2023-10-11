@@ -12,7 +12,7 @@ function App() {
           position: "relative",
           display: "flex",
           flexDirection: "column",
-          backgroundColor:'var(--primary-color)'
+          backgroundColor:'var(--light-gray)'
         }}
       >
         <div
