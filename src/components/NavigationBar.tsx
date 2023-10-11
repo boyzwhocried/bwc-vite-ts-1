@@ -25,25 +25,22 @@ function NavigationBar() {
   const styles = {
     navbar: {
       display: "flex",
-      transition: "0.2s ease",
-      backgroundColor: isExpanded ? "var(--primary-color)" : "",
+      backgroundColor: isExpanded ? "var(--primary-color-75-opacity)" : "",
       backdropFilter: "blur(10px)",
     },
     toggler: {
       border: "none",
       boxShadow: "none",
       width: "20px",
-      transition: "0.3s ease",
     },
     icon: {
       display: "block",
-      height: isExpanded ? "4px" : "24px",
+      height: isExpanded ? "3px" : "24px",
       top: isExpanded ? "40%" : "-100%",
       width: "100%",
       backgroundColor: "var(--text-dark)",
       left: 0,
       borderRadius: isExpanded ? "0" : "20px",
-      transition: "0.3s ease",
     },
     topBar: {
       transform: isExpanded ? "rotate(135deg)" : "rotate(0deg)",
@@ -58,7 +55,6 @@ function NavigationBar() {
     },
     link: {
       color: "var(--text-dark)",
-      transition: "color 0.3s ease",
     },
     linkUnderline: {
       content: '""',
@@ -67,7 +63,6 @@ function NavigationBar() {
       height: "2px",
       backgroundColor: "var(--text-dark)",
       left: 0,
-      transition: "width 0.3s ease",
     },
   };
 

@@ -7,7 +7,7 @@ const Heading = () => {
     <div>
       <Container >
         <Row style={{ padding: "0.5rem" }}>
-          <Col sm={8}>
+          <Col md={8}>
             <Image
               src={image1}
               alt="Image1"
@@ -20,7 +20,7 @@ const Heading = () => {
             />
           </Col>
           <Col
-            sm={4}
+            md={4}
             style={{
               wordSpacing: 2,
               display: "flex",

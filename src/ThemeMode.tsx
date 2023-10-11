@@ -1,34 +1,46 @@
 import { useState } from "react";
 import { ToggleButton } from "react-bootstrap";
-import reactLogo from "./assets/react.svg";
-import "./ThemeMode.css"
+import { MdLightMode } from "react-icons/md";
+import { MdDarkMode } from "react-icons/md";
 
 function ThemeMode() {
+  const [checked, setChecked] = useState(false);
+
   function setDarkMode() {
     document.querySelector("body")?.setAttribute("data-theme", "dark");
   }
   function setLightMode() {
     document.querySelector("body")?.setAttribute("data-theme", "light");
   }
-    const [checked, setChecked] = useState(false);
-    
-    checked ? setDarkMode() : setLightMode();
 
-  // setLightMode();
+  checked ? setDarkMode() : setLightMode();
+
   return (
     <div>
       <ToggleButton
         id="toggle-check"
         type="checkbox"
-        variant="secondary"
         checked={checked}
         value="1"
         onChange={(e) => setChecked(e.currentTarget.checked)}
+        style={{
+          borderRadius: "100px",
+          backgroundColor: "var(--text-dark-75-opacity)",
+          backdropFilter: "blur(5px)",
+          border: "none",
+        }}
       >
-        <div>
-          <img src={reactLogo} className={checked?"moon-invert":''} alt="Moon" />
+        <div
+          style={{
+            color: "var(--light-gray)",
+            fontSize: "24px",
+            
+          }}
+        >
+          {checked ? <MdDarkMode /> : <MdLightMode />}
         </div>
       </ToggleButton>
+      
     </div>
   );
 }
