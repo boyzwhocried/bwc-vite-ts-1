@@ -1,10 +1,11 @@
 import { Row, Col, Image, Container } from "react-bootstrap";
-import image1 from "../assets/images/000015950035.jpg";
+import image1 from "../assets/images/000165220016.jpg";
+// import image1 from "../assets/images/000015950035.jpg";
 
 const Heading = () => {
   return (
     <div>
-      <Container >
+      <Container>
         <Row style={{ padding: "0.5rem" }}>
           <Col md={8}>
             <Image
@@ -14,7 +15,7 @@ const Heading = () => {
                 height: "500px",
                 width: "100%",
                 objectFit: "cover",
-                objectPosition: "0% 80%",
+                // objectPosition: "0% 80%",
               }}
             />
           </Col>
@@ -28,7 +29,7 @@ const Heading = () => {
               justifyContent: "center",
             }}
           >
-            <Row style={{color:'var(--text-dark)'}}>
+            <Row style={{ color: "var(--text-dark)", textAlign: "justify" }}>
               <h2>about me</h2>
               <p>
                 Hey, my name is Verrel Al Syoumi and I use 'boyzwhocried' as my

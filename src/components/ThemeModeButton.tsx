@@ -27,6 +27,7 @@ function ThemeModeButton() {
           backgroundColor: "var(--text-dark-75-opacity)",
           backdropFilter: "blur(5px)",
           border: "none",
+          mixBlendMode:'color-burn'
         }}
       >
         <div

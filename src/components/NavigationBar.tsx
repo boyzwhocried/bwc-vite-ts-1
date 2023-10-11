@@ -27,6 +27,7 @@ function NavigationBar() {
       display: "flex",
       backgroundColor: isExpanded ? "var(--light-gray-75-opacity)" : "",
       backdropFilter: "blur(10px)",
+      
     },
     toggler: {
       border: "none",
@@ -70,7 +71,7 @@ function NavigationBar() {
     <Navbar expand="sm" expanded={isExpanded} style={styles.navbar}>
       <Container>
         <Navbar.Brand style={styles.brand} href="/">
-          <h1 style={{ margin: 0 ,fontWeight:'bolder'}}>boyzwhocried</h1>
+          <h1 style={{ margin: 0 ,}}>boyzwhocried</h1>
         </Navbar.Brand>
         <Navbar.Toggle
           style={{ ...styles.toggler, position: "relative" }}
@@ -86,31 +87,37 @@ function NavigationBar() {
             style={{ ...styles.icon, ...styles.botBar, position: "absolute" }}
           ></span>
         </Navbar.Toggle>
-        <Navbar.Collapse id="basic-navbar-nav" style={{ margin: "0.5rem", padding: 0 }}>
+        <Navbar.Collapse
+          id="basic-navbar-nav"
+          style={{ margin: "0.5rem", padding: 0 }}
+        >
           <Nav className="ms-auto">
             {[
               { label: "explore", link: "#explore" },
               { label: "about", link: "#about" },
             ].map((item) => (
-              <Nav.Link
-                key={item.label}
-                onClick={() => {
-                  closeNavbar();
-                  handleLinkClick(item.label);
-                }}
-                href={item.link}
-                style={{ ...styles.link, position: "relative" }}
-                onMouseEnter={() => handleLinkMouseEnter(item.label)}
-                onMouseLeave={handleLinkMouseLeave}
-              >
-                {item.label}
-                <span
-                  style={{
-                    ...styles.linkUnderline,
-                    width: hoveredLink === item.label || activeLink === item.label ? "100%" : "0",
+                <Nav.Link
+                  key={item.label}
+                  onClick={() => {
+                    closeNavbar();
+                    handleLinkClick(item.label);
                   }}
-                ></span>
-              </Nav.Link>
+                  href={item.link}
+                  style={{ ...styles.link, position: "relative" }}
+                  onMouseEnter={() => handleLinkMouseEnter(item.label)}
+                  onMouseLeave={handleLinkMouseLeave}
+                >
+                  {item.label}
+                  <span
+                    style={{
+                      ...styles.linkUnderline,
+                      width:
+                        hoveredLink === item.label || activeLink === item.label
+                          ? "100%"
+                          : "0",
+                    }}
+                  ></span>
+                </Nav.Link>
             ))}
           </Nav>
         </Navbar.Collapse>

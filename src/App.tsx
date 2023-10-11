@@ -9,6 +9,7 @@ import "./App.css";
 
 function App() {
   const { ref, height } = useComponentHeight();
+  const navbarHeight = height;
 
   return (
     <>
@@ -22,7 +23,7 @@ function App() {
           backgroundColor: "var(--light-gray)",
         }}
       >
-        <div className="navbar-height" style={{ height: height }} />
+        <div className="navbar-height" style={{ height: navbarHeight }} />
         <div
           ref={ref}
           className="navbar-wrapper"
@@ -41,7 +42,14 @@ function App() {
           </motion.div>
         </div>
         <div className="content-wrapper">
-          <div>
+          <div
+            style={{
+              display: "flex",
+              minHeight: `calc(100vh - ${navbarHeight}px)`,
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <Heading />
           </div>
           <Heading />
@@ -53,7 +61,7 @@ function App() {
             position: "fixed",
             bottom: 0,
             right: 0,
-            padding: "0.5rem",
+            padding: "1rem",
           }}
         >
           <ThemeModeButton />
