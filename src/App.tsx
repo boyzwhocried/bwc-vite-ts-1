@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
+import { MeshGradientRenderer } from "@johnn-e/react-mesh-gradient";
 
-import useComponentHeight from "./tools/UseComponentHeight";
+import useComponentHeight from "./hooks/useComponentHeight";
 
 import Heading from "./components/Heading";
 import NavigationBar from "./components/NavigationBar";
@@ -9,20 +10,26 @@ import "./App.css";
 
 function App() {
   const { ref, height } = useComponentHeight();
+  const navbarHeight = height;
 
   return (
     <>
       <div className="noise-overlay" />
+      <MeshGradientRenderer
+        className="gradient"
+        colors={["#b3c897", "#d8cadd", "#ffc6a0", "#a9cfe7", "#b3c897"]}
+        style={{ position: "fixed", height:'100%' ,width:'100%'}}
+      />
       <div
         className="main-wrapper"
         style={{
           position: "relative",
           display: "flex",
           flexDirection: "column",
-          backgroundColor: "var(--light-gray)",
+          backgroundColor: "var(--light-gray-75-opacity)",
         }}
       >
-        <div className="navbar-height" style={{ height: height }} />
+        <div className="navbar-height" style={{ height: navbarHeight }} />
         <div
           ref={ref}
           className="navbar-wrapper"
@@ -41,7 +48,14 @@ function App() {
           </motion.div>
         </div>
         <div className="content-wrapper">
-          <div>
+          <div
+            style={{
+              display: "flex",
+              minHeight: `calc(100vh - ${navbarHeight}px)`,
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <Heading />
           </div>
           <Heading />
@@ -53,7 +67,7 @@ function App() {
             position: "fixed",
             bottom: 0,
             right: 0,
-            padding: "0.5rem",
+            padding: "1rem",
           }}
         >
           <ThemeModeButton />
