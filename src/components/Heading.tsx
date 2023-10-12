@@ -1,6 +1,5 @@
 import { Row, Col, Image, Container } from "react-bootstrap";
 import image1 from "../assets/images/000165220016.jpg";
-// import image1 from "../assets/images/000015950035.jpg";
 
 const Heading = () => {
   return (
@@ -15,7 +14,6 @@ const Heading = () => {
                 height: "500px",
                 width: "100%",
                 objectFit: "cover",
-                // objectPosition: "0% 80%",
               }}
             />
           </Col>

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
 interface RandomNumberGeneratorProps {
-  interval: number; // Interval in milliseconds
-  range: [number, number]; // Range for random numbers
+  interval: number;
+  range: [number, number];
 }
 
 function useRandomNumberGenerator({
